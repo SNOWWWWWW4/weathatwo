@@ -1,3 +1,4 @@
+'use client'
 import React, { ChangeEvent, useState } from 'react'
 import { SearchProps } from '@/interface/interface';
 import { BsSearch } from 'react-icons/bs'

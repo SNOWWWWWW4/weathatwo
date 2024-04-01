@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from 'react';
 import SearchComponent from './SearchComponent';
 import { NavbarProps } from '@/interface/interface';

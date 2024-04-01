@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 const SingleWDComponent = (props: {info:string, icon:any, value:number}) => {

@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import WeatherIconsComponent from './WeatherIconsComponent';
 import SingleWDComponent from './SingleWDComponent';
@@ -117,9 +118,9 @@ const HomePageComponent: React.FC<HomePageProps> = ({ searchValue, tog, setTog})
 
             {/* third box */}
             {/* favorites */}
-            <div className={`w-2/4 h-[175px] order-last mx-auto ${!tog ? 'bg-white/30 border' : 'border-cyan-500'} rounded-xl py-1 px-1 shadow-sm`}>
+            <div className={`w-2/4 h-[175px] order-last mx-auto ${!tog ? 'bg-white/30 border' : 'border-cyan'} rounded-xl py-1 px-1 shadow-sm`}>
               <p className='text-center text-2xl'>Favorites</p>
-              <div className='overflow-y-scroll flex flex-col align-center'>
+              <div className='overflow-y-auto max-h-[120px] flex flex-col align-center mt-1 mb-1'>
                 {favorites.map((cityName, index) => (
                   <div key={index} className='flex align-center justify-between px-2'>
                     <span>{cityName}</span>
